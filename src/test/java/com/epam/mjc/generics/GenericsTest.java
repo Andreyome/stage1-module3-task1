@@ -73,7 +73,7 @@ public class GenericsTest {
                 getLineWithString(list, "clone").contains("List<? extends T>"));
     }
 
-    private String getLineWithString(List<String> list, String str) {
+        private String getLineWithString(List<String> list, String str) {
         for (String s : list
         ) {
             if (s.contains(str)) {
