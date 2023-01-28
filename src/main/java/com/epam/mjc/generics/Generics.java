@@ -6,11 +6,11 @@ import java.util.List;
 public class Generics {
 
     //TODO: Refactor Method-1
-    public List <String> boxingMethod(String name) {
-        List <String> firstList = new ArrayList<>();
+    public <T> List <T> boxingMethod(T name) {
+        List <T> firstList = new ArrayList<>();
         firstList.add(name);
-        List <String> secondList = new ArrayList<>();
-        secondList.add(firstList.toString());
+        List <T> secondList = new ArrayList<>();
+        secondList.add((T) firstList);
         return secondList;
     }
 
